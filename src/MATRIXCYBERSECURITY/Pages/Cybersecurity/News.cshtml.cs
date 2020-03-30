@@ -9,8 +9,11 @@ namespace MATRIXCYBERSECURITY.Pages.Cybersecurity
 {
     public class NewsModel : PageModel
     {
+        public string Message { get; set; }
+
         public void OnGet()
         {
+            Message = DateTime.Now.ToString("MM/dd/yyyy h:mm tt");
         }
     }
 }
